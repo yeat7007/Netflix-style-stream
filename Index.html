@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booker Stream</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body { background-color: #111; color: white; font-family: Helvetica, Arial, sans-serif; }
+        .hero { background: linear-gradient(to top, #111 10%, transparent), url('https://image.tmdb.org/t/p/original/62860o2mYmSLcm7ghTISS1oZmFI.jpg'); background-size: cover; height: 80vh; }
+        .movie-card:hover { transform: scale(1.1); transition: 0.3s; z-index: 10; }
+    </style>
+</head>
+<body>
+
+    <nav class="fixed top-0 w-full p-5 flex justify-between items-center z-50 bg-gradient-to-b from-black to-transparent">
+        <h1 class="text-red-600 text-3xl font-bold uppercase">Booker TV</h1>
+    </nav>
+
+    <header class="hero flex items-end pb-20 px-10">
+        <div>
+            <h2 class="text-5xl font-bold mb-4">Trending Now</h2>
+            <button class="bg-white text-black px-8 py-2 rounded font-bold mr-3 hover:bg-gray-300">Play</button>
+            <button class="bg-gray-500/50 text-white px-8 py-2 rounded font-bold hover:bg-gray-500">More Info</button>
+        </div>
+    </header>
+
+    <div class="px-10 -mt-20 relative z-20">
+        <h3 class="text-xl font-semibold mb-4">Popular on Booker TV</h3>
+        <div class="flex space-x-4 overflow-x-scroll no-scrollbar pb-10">
+            <div class="movie-card min-w-[200px] h-[300px] bg-gray-800 rounded-md cursor-pointer">
+                <img src="https://image.tmdb.org/t/p/w500/8Gxv8S7eeG0mwj2Aqv67I39P1U6.jpg" class="rounded-md object-cover w-full h-full">
+            </div>
+            <div class="movie-card min-w-[200px] h-[300px] bg-gray-800 rounded-md cursor-pointer">
+                <img src="https://image.tmdb.org/t/p/w500/7WsyChQZ3ZpI5jcU2vDyP7pSGiO.jpg" class="rounded-md object-cover w-full h-full">
+            </div>
+            <div class="movie-card min-w-[200px] h-[300px] bg-gray-800 rounded-md cursor-pointer">
+                <img src="https://image.tmdb.org/t/p/w500/qNBAXBIQln1SvrF2kyjN244o2M3.jpg" class="rounded-md object-cover w-full h-full">
+            </div>
+        </div>
+    </div>
